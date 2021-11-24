@@ -12,14 +12,11 @@ $films = findAllFilm();
                 ?>
                 <div class='product'>
                     <h1>
-                        <a href="detail.php?id=<?= $film['id_film'] ?>">
+                        <a href="detailF.php?id=<?= $film['id_film'] ?>">
                             <?= $film['titre'] ?>
                         </a>
                     </h1>
-                    <p> Duree : <?= $film['duree'] ?>&nbsp;min</p>
-                    <p>Date sortie : <?= $film['date_sortie'] ?></p>
-                    <p>Synopsis : <?= $film['synopsis'] ?></p>
-                    <p>note : <?= $film['note'] ?></p>
+                    <div id="gallery"><img src="<?= $film['image'] ?>"></div>
                     <h4><a href="detailR.php?id=<?= $film['id_realisateur'] ?>">Realisateur : <?= $film['nom_realisateur'] ?></a></h4>
                 </div>
                 <?php

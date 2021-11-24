@@ -136,7 +136,6 @@ th{
 }
 .product{
     margin: auto;
-    width: 300px;
     padding: 0.5em;
     border: 0px solid brown;
     text-align: center;
@@ -166,4 +165,14 @@ th{
 #modal-actions{
     display: flex;
     justify-content: space-around;
+}
+
+
+#gallery img{
+    width: 801px;
+    height: 410px;
+}
+li{
+    font-size: 1.5em;
+    padding: 1em;
 }

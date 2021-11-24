@@ -12,7 +12,7 @@
             <?php
                 foreach($acteursFilms as $acteur){
                     ?>
-                    <p><?=$acteur['nom_acteur']?>,<?=$acteur['prenom_acteur']?> </p>
+                    <p><?=$acteur['acteur']?> </p>
                     <p> Sexe :<?=$acteur['sexe']?></p>
                     <p> Date naissance :<?=$acteur['date_naissance']?></p>
                     <p> Role :<?=$acteur['nom_role']?>, dans :<?=$acteur['titre']?></p>

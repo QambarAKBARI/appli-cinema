@@ -1,8 +1,19 @@
 <?php
     include "db_functions.php";
-    
-    $realisateurs = findAllRealisateurs();
 
+    $realisateurs = findAllRealisateurs();
+?>    
+    <h1>La liste des acteurs :</h1>
+    <ul>
+    <?php    
     foreach($realisateurs as $realisateur){
-        echo "<p>".$realisateur['realisateur']."</p>";
+        ?>
+        <li>
+            <a href='detailR.php?id=<?= $realisateur['id_realisateur'] ?>'>
+                <?=$realisateur['realisateur']?>
+            </a>
+        </li>
+        <?php
     }
+    ?>
+    </ul>

@@ -16,7 +16,7 @@
 
     <div class="container">
         <div class='product'>
-            <h1><?= $realisateur['nom_realisateur'] , $realisateur['prenom_realisateur'] ?> </h1>
+            <h1><?= $realisateur['realisateur'] ?> </h1>
             <p>sexe : <?= $realisateur['sexe'] ?></p>
             <p>Date naissance : <?= $realisateur['date_naissance'] ?></p>
             <h3>La liste des films :</h3>
