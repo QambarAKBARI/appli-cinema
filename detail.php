@@ -13,7 +13,7 @@
 ?>
 
     <div class="container">
-        <div class='product'>
+        <div class='casting'>
             <h1><?= $film['titre'] ?></h1>
             <p> Duree : <?= $film['duree'] ?>&nbsp;min</p>
             <p>Date sortie : <?= $film['date_sortie'] ?></p>
@@ -32,6 +32,9 @@
                     <?php
                 }
             ?>
+        </div>
+        <div>
+            <img width="600px" height="803px" src="<?= $film['image']?>" alt="">
         </div>
     </div>
 <?php

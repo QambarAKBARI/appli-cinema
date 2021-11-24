@@ -16,7 +16,7 @@
 
     function findAllFilm(){
         $db = connexion();
-        $sql = "SELECT id_film, titre, duree, date_sortie, synopsis, note, nom_realisateur, r.id_realisateur
+        $sql = "SELECT id_film, titre, duree, image, date_sortie, synopsis, note, CONCAT(prenom_realisateur, ' ',nom_realisateur) AS realisateur, r.id_realisateur
                 FROM film f
                 INNER JOIN realisateur r ON r.id_realisateur = f.id_realisateur";
         $stmt = $db->query($sql);
@@ -27,7 +27,7 @@
     function findOneById($id){
         $db = connexion();
 
-        $sql = "SELECT id_film, titre, duree, date_sortie, synopsis, note, nom_realisateur, r.id_realisateur
+        $sql = "SELECT id_film, titre, duree, image, date_sortie, synopsis, note, nom_realisateur, r.id_realisateur
         FROM film f
         INNER JOIN realisateur r ON r.id_realisateur = f.id_realisateur
         WHERE id_film = :id";
