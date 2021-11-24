@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Outfit:wght@400;700&display=swap');
+
 *{
     box-sizing: border-box;
+}
+body{
+    font-family: 'Inconsolata', monospace;
 }
 h1, h2{
     text-align: center;
@@ -12,6 +17,11 @@ nav{
     padding: 1em 2em;
     background-color: #FFBF86;
     border-radius: 5px;
+}
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .home a{
     display: inline-block;
@@ -140,8 +150,7 @@ th{
     padding: 0.5em;
     border: 0px solid brown;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    
+    border: 1px solid brown;    
 }
 .product-info{
     width: 70%;
@@ -166,4 +175,8 @@ th{
 #modal-actions{
     display: flex;
     justify-content: space-around;
+}
+
+li{
+    padding: 0.8em;
 }

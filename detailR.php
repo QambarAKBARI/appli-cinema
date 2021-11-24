@@ -1,7 +1,6 @@
 <?php
     ob_start();
     include "db_functions.php";
-    include "functions.php";
     
     $id = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);
 
@@ -11,7 +10,6 @@
     }
 
     $realisateurFilms = findMoviesRealisateur($id);
-        
 ?>
 
     <div class="container">
@@ -22,7 +20,13 @@
             <h3>La liste des films :</h3>
             <?php
                 foreach($realisateurFilms as $film){
-                    echo "<p>".$film['titre']."</p>";
+                    ?>
+                    <p>
+                        <a href="detail.php?id=<?= $film['id_film'] ?>">
+                            <?=$film['titre']?>
+                        </a>
+                    </p>
+                    <?php
                 }
             
             ?>

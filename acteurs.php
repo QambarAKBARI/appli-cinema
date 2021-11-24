@@ -1,10 +1,22 @@
 <?php
+    ob_start();
     include "db_functions.php";
 
     $acteurs = findAllActeurs();
-    echo "<h1>La liste des acteurs :</h1>";
-    echo "<ul>";
-    foreach($acteurs as $acteur){
-        echo "<li><a href='detailA.php?idacteur=<?= {$acteur['id_acteur'] }?>'>".$acteur['acteur']."</a></li>";
-    }
-    echo "</ul>";
+?>
+<div class="product">
+    <h1>La liste des acteurs :</h1>
+    <ul>
+        <?php
+        foreach($acteurs as $acteur){
+            ?>
+            <li><a href='detailA.php?idacteur=<?= $acteur['id_acteur'] ?>'><?= $acteur['acteur'] ?></a></li>
+            <?php
+        }
+        ?>
+    </ul>
+</div>
+<?php
+$titre = "La liste des acteurs";
+$result = ob_get_clean();
+require "template.php";
