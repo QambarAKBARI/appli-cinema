@@ -16,11 +16,7 @@
 
     function findAllFilm(){
         $db = connexion();
-<<<<<<< HEAD
-        $sql = "SELECT id_film, titre, image,duree, date_sortie, synopsis, note, nom_realisateur, r.id_realisateur
-=======
         $sql = "SELECT id_film, titre, duree, image, date_sortie, synopsis, note, CONCAT(prenom_realisateur, ' ',nom_realisateur) AS realisateur, r.id_realisateur
->>>>>>> b7d14a75d06a5482768e4de33d84c5787b8f0f2a
                 FROM film f
                 INNER JOIN realisateur r ON r.id_realisateur = f.id_realisateur";
         $stmt = $db->query($sql);
@@ -76,11 +72,7 @@
     function findMoviesActeurs($id){
         $db = connexion();
 
-<<<<<<< HEAD
-        $sql = "SELECT CONCAT(nom_acteur, ' ',prenom_acteur) AS acteur, sexe, date_naissance, nom_role, titre, a.id_acteur AS id_acteur
-=======
-        $sql = "SELECT nom_acteur, prenom_acteur, sexe, date_naissance, nom_role,r.id_role AS id_role, titre, a.id_acteur AS id_acteur, f.id_film AS id_film
->>>>>>> b7d14a75d06a5482768e4de33d84c5787b8f0f2a
+        $sql = "SELECT CONCAT(nom_acteur, ' ', prenom_acteur) AS acteur, sexe, date_naissance, nom_role,r.id_role AS id_role, titre, a.id_acteur AS id_acteur, f.id_film AS id_film
                 FROM casting c 
                 INNER JOIN acteur a ON a.id_acteur = c.id_acteur
                 INNER JOIN film f ON f.id_film = c.id_film

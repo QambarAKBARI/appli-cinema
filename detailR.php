@@ -22,7 +22,7 @@
                 foreach($realisateurFilms as $film){
                     ?>
                     <p>
-                        <a href="detail.php?id=<?= $film['id_film'] ?>">
+                        <a href="detailF.php?id=<?= $film['id_film'] ?>">
                             <?=$film['titre']?>
                         </a>
                     </p>

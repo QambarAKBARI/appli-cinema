@@ -11,7 +11,7 @@
         <?php
         foreach($roles as $role){
             ?>
-            <li>le role : <?= $role['nom_role']?> a été joué par : <a href="detailA.php?idacteur=<?= $role['id_acteur'] ?>"><?= $role['acteur']?></a> dans le film :<a href="detail.php?id=<?= $role['id_film'] ?>"><?= $role['titre']?></a></li>
+            <li>le role : <?= $role['nom_role']?> a été joué par : <a href="detailA.php?idacteur=<?= $role['id_acteur'] ?>"><?= $role['acteur']?></a> dans le film :<a href="detailF.php?id=<?= $role['id_film'] ?>"><?= $role['titre']?></a></li>
             <?php
         }
         ?>

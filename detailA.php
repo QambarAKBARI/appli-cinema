@@ -14,7 +14,7 @@
                     <p><?=$acteur['acteur']?> </p>
                     <p> Sexe :<?=$acteur['sexe']?></p>
                     <p> Date naissance :<?=$acteur['date_naissance']?></p>
-                    <p> Role :<a href="detailRoles.php?id=<?= $acteur['id_role'] ?>"><?=$acteur['nom_role']?></a>, dans :<a href="detail.php?id=<?= $acteur['id_film'] ?>"><?=$acteur['titre']?></a></p>
+                    <p> Role :<a href="detailRoles.php?id=<?= $acteur['id_role'] ?>"><?=$acteur['nom_role']?></a>, dans :<a href="detailF.php?id=<?= $acteur['id_film'] ?>"><?=$acteur['titre']?></a></p>
 
                     <?php
                 }

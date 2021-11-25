@@ -176,20 +176,9 @@ th{
     justify-content: space-around;
 }
 
-<<<<<<< HEAD:css/main.css
-
-#gallery img{
-    width: 801px;
-    height: 410px;
-}
-li{
-    font-size: 1.5em;
-    padding: 1em;
-=======
 li{
     padding: 0.8em;
 }
 .casting{
     width: 600px;
->>>>>>> b7d14a75d06a5482768e4de33d84c5787b8f0f2a:css/style.css
 }
