@@ -1,0 +1,22 @@
+{
+    "name": "qambar/cinema",
+    "description": "appli mvc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Qambar\\Cinema\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "QambarAKBARI",
+            "email": "qambarakbarifr@gmail.com"
+        }
+    ],
+    "require": {},
+    "auroload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
